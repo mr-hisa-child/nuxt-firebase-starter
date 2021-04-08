@@ -59,12 +59,12 @@ export default {
 
   firebase: {
     config: {
-      apiKey: 'AIzaSyCyYkeaSGpWPBK_U7IZ2EaMSaydBs-Ppsw',
-      authDomain: 'fwapp-308613.firebaseapp.com',
-      projectId: 'fwapp-308613',
-      storageBucket: 'fwapp-308613.appspot.com',
-      messagingSenderId: '1035320895203',
-      appId: '1:1035320895203:web:fbe22331837f8de14e87d6'
+      apiKey: process.env.FIREBASE_API_KEY,
+      authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+      projectId: process.env.FIREBASE_PROJECT_ID,
+      storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+      messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
+      appId: process.env.FIREBASE_APP_ID
     },
     services: {
       auth: true,
